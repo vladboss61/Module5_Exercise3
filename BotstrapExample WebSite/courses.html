@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light pt-5">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/Prime-Inspire-Logo.svg" alt="">
+        </a>
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                <a href="#" class="btn btn-sm btn-danger align-items-center d-inline-flex text-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    Sign-up for Free
+                </a>
+                <a href="#" class="btn btn-sm btn-warning align-items-center d-inline-flex text-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Login
+                </a>
+            </div>
+            <form class="d-flex" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-sm" placeholder="Search for..">
+                    <button type="submit" class="btn btn-sm btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Courses Banner -->
+<header class="courses-header py-5 border-bottom">
+    <div class="container">
+        <div class="row align-items-center gx-md-5">
+            <div class="col-md-6">
+                <div class="home-header-text-holder pe-md-5">
+                    <h1 class="fs-3 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias nulla minus sunt similique</h1>
+                    <h2 class="fs-5 fw-light text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, debitis mollitia laudantium tenetur, tempora obcaecati provident voluptatum</h2>
+                    <div class="col-md-10 my-3 courses-search-form">
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <input type="search" class="form-control form-control-sm" placeholder="Search for..">
+                                <button type="submit" class="btn btn-sm btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="home-header-image-holder">
+                    <img class="rounded img-fuild shadow-sm full-width" src="img/main-header.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Courses Banner -->
+
+<!-- Courses List -->
+<section class="courses-list py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group small mb-3">
+                    <div class="list-group-item text-bg-light fw-bold">Course Categories</div>
+                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Premium Courses
+                        <span class="badge text-bg-warning rounded-pill">14</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Free Courses
+                        <span class="badge text-bg-warning rounded-pill">1</span>
+                    </a>
+                </div>
+                <div class="list-group small mb-3">
+                    <div class="list-group-item text-bg-light fw-bold">Course by Topics</div>
+                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Coding
+                        <span class="badge text-bg-warning rounded-pill">14</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Programming
+                        <span class="badge text-bg-warning rounded-pill">1</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Design
+                        <span class="badge text-bg-warning rounded-pill">1</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="list-group small">
+                    <div class="list-group-item text-bg-light fw-bold d-flex justify-content-between align-items-center">
+                        List of all courses
+                        <span class="badge text-bg-warning rounded-pill">24 Courses Available</span>
+                    </div>
+                    <a href="single-course.html" class="list-group-item list-group-item-action">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-4">
+                                <div class="course-image-holder">
+                                    <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="img/main-header.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                <p class="d-inline-flex align-items-center">
+                                    <span class="me-2 rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Rating: 4.7
+                                    </span>
+                                    <span class="rounded-pill text-bg-success px-2 py-1 small">
+                                        Price: Rs.499/-
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="single-course.html" class="list-group-item list-group-item-action">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-4">
+                                <div class="course-image-holder">
+                                    <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="img/main-header.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                <p class="d-inline-flex align-items-center">
+                                    <span class="me-2 rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Rating: 4.7
+                                    </span>
+                                    <span class="rounded-pill text-bg-success px-2 py-1 small">
+                                        Price: Rs.499/-
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="single-course.html" class="list-group-item list-group-item-action">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-4">
+                                <div class="course-image-holder">
+                                    <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="img/main-header.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                <p class="d-inline-flex align-items-center">
+                                    <span class="me-2 rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Rating: 4.7
+                                    </span>
+                                    <span class="rounded-pill text-bg-success px-2 py-1 small">
+                                        Price: Rs.499/-
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="single-course.html" class="list-group-item list-group-item-action">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-4">
+                                <div class="course-image-holder">
+                                    <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="img/main-header.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                <p class="d-inline-flex align-items-center">
+                                    <span class="me-2 rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Rating: 4.7
+                                    </span>
+                                    <span class="rounded-pill text-bg-success px-2 py-1 small">
+                                        Price: Rs.499/-
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="single-course.html" class="list-group-item list-group-item-action">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-4">
+                                <div class="course-image-holder">
+                                    <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="img/main-header.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                <p class="d-inline-flex align-items-center">
+                                    <span class="me-2 rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Rating: 4.7
+                                    </span>
+                                    <span class="rounded-pill text-bg-success px-2 py-1 small">
+                                        Price: Rs.499/-
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses List -->
+
+<!-- Subscribe -->
+<section class="subscribe py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="subscribe-heading text-white text-md-end text-center">
+                    <h5 class="fs-4 fw-light m-0 mb-md-0 mb-3">Subscribe for newsletters</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form class="d-flex justify-content-center">
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm" placeholder="Your email">
+                        <button type="submit" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2 bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                            </svg>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subscribe -->
+
+<!-- Main Footer -->
+<footer class="main-footer text-bg-dark py-5 small">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="brand-icon mb-2">
+                    <img src="img/Prime-Inspire-Logo-dark.svg" alt="">
+                </div>
+                <address class="small text-secondary">
+                    Jayanagar, Bangalore, <br>
+                    Karnataka, India. <br>
+                    560011
+                </address>
+                <p class="small text-secondary">
+                    contact&commat;primeinspire.com
+                </p>
+            </div>
+            <div class="col-md-2">
+                <h6>Main Menu</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Misc</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <h6>Follow us</h6>
+                <p>
+                    <a href="#" class="btn btn-sm btn-primary rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-md-2" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <span class="d-md-block d-none">Facebook</span>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-info rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-md-2" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                        <span class="d-md-block d-none">Twitter</span>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube me-md-2" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                        <span class="d-md-block d-none">YouTube</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Main Footer -->
+
+<!-- Copyright -->
+<div class="copy py-4 small" style="background-color: black;">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white">
+            <p class="m-0 small">Copyright &copy; 2022. All Rights Reserved. </p>
+        </div>
+    </div>
+</div>
+<!-- Copyright -->
+
+<!-- Mobile Padding -->
+<div class="mobile-padding pt-5 pb-4 d-md-none" style="background-color: black;"></div>
+<!-- Mobile Padding -->
+
+<!-- Sticky Footer -->
+<div class="d-md-none d-block d-flex p-3 fixed-bottom justify-content-center blur-filter shadow-lg">
+    <a href="#" class="rounded-pill btn btn-sm btn-warning small px-3 fw-bold d-inline-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        Sign-up for Free
+    </a>
+</div>
+<!-- Sticky Footer -->
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
